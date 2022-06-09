@@ -1,17 +1,22 @@
-<script setup>
+<script lang="ts" setup>
 import { ref } from 'vue';
 
-const newWorkspaceName = ref('')
-const workspaceList = ref([
-  { id: 123, name: 'Test' },
-  { id: 345, name: 'Test3' }
+interface Workspace {
+  id: string,
+  name: string
+}
+
+const newWorkspaceName = ref<string>('')
+const workspaceList = ref<Workspace[]>([
+  { id: '123', name: 'Test' },
+  { id: '345', name: 'Test3' }
 ])
 
 const createWorkspace = () => {
   const randomId = Math.floor(Math.random() * 1000)
 
   workspaceList.value.push({
-    id: randomId,
+    id: String(randomId),
     name: newWorkspaceName.value
   })
   newWorkspaceName.value = ""
