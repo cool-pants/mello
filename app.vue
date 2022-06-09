@@ -1,12 +1,48 @@
-<script>
-export default {}
+<script setup>
+import { ref } from 'vue';
+
+const newWorkspaceName = ref('')
+const workspaceList = ref([
+  { id: 123, name: 'Test' },
+  { id: 345, name: 'Test3' }
+])
+
+const createWorkspace = () => {
+  const randomId = Math.floor(Math.random() * 1000)
+
+  workspaceList.value.push({
+    id: randomId,
+    name: newWorkspaceName.value
+  })
+  newWorkspaceName.value = ""
+}
+
 </script>
 
 <template>
   <h1>Home Page</h1>
   <h2>Recently Viewed</h2>
   <h2>Workspaces</h2>
+  <input type="text" v-model="newWorkspaceName" />
+  <button @click="createWorkspace">Create a Workspace</button>
+  <ul class="workspace-list">
+    <li class="workspace-card" v-for="workspace in workspaceList" :key="workspace.id">
+      {{ workspace.id }}: {{ workspace.name }}
+    </li>
+  </ul>
 </template>
 
 <style>
+.workspace-card {
+  display: block;
+  border: 2px solid #222;
+  border-radius: 4px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.workspace-list {
+  margin-left: 0px;
+  padding-left: 0px;
+}
 </style>
