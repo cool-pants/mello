@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxtjs/composition-api": "^0.32.0",
     "@pinia/nuxt": "^0.1.9",
+    "@supabase/supabase-js": "^1.35.3",
     "@vueuse/core": "^8.6.0",
     "pinia": "^2.0.14",
     "pinia-plugin-persistedstate": "^1.6.1"
