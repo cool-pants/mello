@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-    <h1>Workspace #{{ $route.params.id }} </h1>
+    <div>
+        <h1>Workspace #{{ $route.params.id }} </h1>
+    </div>
 </template>
 
 <style>
