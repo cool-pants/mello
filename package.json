@@ -11,10 +11,14 @@
   },
   "dependencies": {
     "@nuxtjs/composition-api": "^0.32.0",
+    "@nuxtjs/style-resources": "^1.2.1",
     "@pinia/nuxt": "^0.1.9",
     "@supabase/supabase-js": "^1.35.3",
     "@vueuse/core": "^8.6.0",
+    "fibers": "^5.0.1",
+    "node-sass": "^7.0.1",
     "pinia": "^2.0.14",
-    "pinia-plugin-persistedstate": "^1.6.1"
+    "pinia-plugin-persistedstate": "^1.6.1",
+    "sass-loader": "10"
   }
 }
