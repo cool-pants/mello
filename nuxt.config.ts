@@ -5,5 +5,5 @@ export default defineNuxtConfig({
     modules: [ 
         '@pinia/nuxt',
         '@nuxtjs/style-resources',
-    ]
+    ],
 })
