@@ -4,10 +4,13 @@ export default {}
 
 <template>
     <div>
-        <p>Default Layout</p>
-        <nav>
+        <nav class="navbar">
             <nuxt-link to="/">Home</nuxt-link>
         </nav>
         <slot />
     </div>
 </template>
+
+<style lang="scss">
+@import url('../styles/main.scss');
+</style>

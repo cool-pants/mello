@@ -1,0 +1,9 @@
+.navbar{
+    background-color: #fff;
+    min-height: 50px;
+    border-bottom: 5px solid rgb(195, 195, 195);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-left: 10px;
+    align-items: center;
+}

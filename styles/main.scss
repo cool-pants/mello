@@ -1,0 +1,11 @@
+@import url('./navbar.scss');
+@import url('./workspace.scss');
+@import url('./home.scss');
+
+body, .__nuxt{
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(250, 250, 250);
+}

@@ -1,0 +1,49 @@
+.workspace-card {
+    display: block;
+    border: 2px solid #222;
+    border-radius: 4px;
+    padding: 2rem;
+    margin: 1rem 0px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 3;
+    min-height: 150px;
+}
+
+.workspace-title {
+    grid-column: 2 / span 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.workspace-body {
+    grid-column: 3/ span 7;
+}
+
+.workspace-link {
+    grid-column: 3/ span 6;
+}
+
+.workspace-list {
+    margin-left: 0px;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+a{
+    transition: 0.1s;
+    text-decoration: none;
+    color: #222;
+}
+a:hover > div{
+    font-weight: 700;
+}
+
+.trash{
+    cursor: pointer;
+    color: red;
+}
